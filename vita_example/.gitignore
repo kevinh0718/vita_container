@@ -1,0 +1,6 @@
+*
+!.gitignore
+!CMakeLists.txt
+!ex1_simple2D.vtk
+!example_1.cpp
+!data/
