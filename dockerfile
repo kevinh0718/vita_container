@@ -23,6 +23,10 @@ RUN apt-get update && \
     # Clean up apt cache to reduce image size
     && rm -rf /var/lib/apt/lists/*
 
+# Set an environment variable with the license information (Optional, but good practice)
+LABEL license="Apache-2.0"
+LABEL project.url="https://github.com/GonzaloMaso/VItA.git"
+
 # Install specific CMake version
 RUN wget https://github.com/Kitware/CMake/releases/download/v3.5.0/cmake-3.5.0-Linux-x86_64.tar.gz && \
     tar -zxvf cmake-3.5.0-Linux-x86_64.tar.gz && \

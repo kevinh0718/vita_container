@@ -1,8 +1,16 @@
-# Vita container
-This repo is to utilize the docker container for [VitA](https://github.com/GonzaloMaso/VItA) (Talou's impelmentation of the CCO) to avoid repeatitive compilation of the `vita_build`.\
-The docker image can be found on [Docker Hub](https://hub.docker.com/r/kevinh0718/vita_talou_cco),\
-which contains the compiled `lib`, `include`, `vita_build`, and `vita_source`.\
-The container of the image can be used to compiled the vita example and generate the `.vtp` files.
+# VItA Container
+
+This repository contains the `Dockerfile` and instructions to utilize a Docker container for the [VItA](https://github.com/GonzaloMaso/VItA) project, which is a key component for the implementation of the Constrained Constructive Optimization (CCO) algorithm. The purpose of this container is to provide a pre-compiled environment, avoiding the need for repetitive and complex compilation of the `VItA` source code.
+
+The pre-built Docker image is available on [Docker Hub](https://hub.docker.com/r/kevinh0718/vita_talou_cco). This image includes the pre-compiled VItA libraries and binaries, which are ready for use. The container can be used to compile VItA examples and generate `.vtp` files.
+
+## Licensing
+
+This project and its Docker image contain software from the `VItA` project, which is distributed under the **Apache License, Version 2.0**.
+
+By using this Docker image, you are subject to the terms of this license.
+
+Please see the original [VItA repository](https://github.com/GonzaloMaso/VItA) for the full source code and licensing details.
 
 # Quick start
 1. Download this repo and update the `.vtk` file and `.cpp` file in the `vita_example` folder.
